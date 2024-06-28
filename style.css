@@ -11,7 +11,6 @@
 body {
     background-color: #080808;
     color: #fff;
-    
 }
 
 #header {
@@ -23,7 +22,6 @@ body {
 
 .container {
     padding: 0 10%;
-    
 }
 
 nav {
@@ -48,7 +46,6 @@ nav {
     margin: 0;
     padding: 0;
     gap: 20px;
-    
 }
 
 .navbar li {
@@ -82,7 +79,6 @@ nav {
     text-align: center; /* Center align the image */
     margin-top: 20px; /* Adjust as needed for spacing */
     position: absolute;
-
 }
 
 .profile-photo {
@@ -143,65 +139,50 @@ html {
 }
 
 /* Index.html */
- 
-.index-col-1
-{
+.index-col-1 {
     flex-basis: 55%;
 }
-.index-col-2
-{
+
+.index-col-2 {
     flex-basis: 35%;
 }
 
- 
-
-
-
 /* ====================================================ABOUT========================================================================= */
-#about
-{
+#about {
     padding: 40px 0;
     color: white;
 }
-.about-col-1 img
-{
+
+.about-col-1 img {
     width: 80%;
     border-radius: 15px;
-    
 }
-.row
-{
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1 
-{
+
+.about-col-1 {
     flex-basis: 35%;
-    
 }
-.about-col-2 
-{
-    flex-basis:60%
+
+.about-col-2 {
+    flex-basis: 60%;
 }
-.sub-title
-{
+
+.sub-title {
     font-size: 40px;
     font-weight: 600;
     color: white;
 }
- #subspan
-{
-    color:#988DFC ;
+
+#subspan {
+    color: #988DFC;
 }
 
-
-
-
-
-
-#commingsoon
-{
+#commingsoon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,45 +190,34 @@ html {
 }
 
 /* ===========================================================RESUME==================================================================================== */
-
-
-
-
-#resume
-{
+#resume {
     width: 100%;
     height: 975px;
 }
+
 /* ===========================================================Project==================================================================================== */
-
-.card-text{
+.card-text {
     color: white;
-    /* padding-top:25 ; */
 }
-/* #project
-{
-    display: flex;
-} */
 
-.headingg
-{
+.headingg {
     margin-top: -120px;
 }
-.card
-{
+
+.card {
     margin-top: 40px;
 }
-.card-col
-{
-margin-top: 100px; 
-position: relative;
-}
-.card-container
-{
+
+.card-col {
+    margin-top: 100px;
     position: relative;
 }
-.Project-heading
-{
+
+.card-container {
+    position: relative;
+}
+
+.Project-heading {
     font-size: 25px;
     margin-top: 25px;
 }
@@ -259,7 +229,99 @@ position: relative;
 .zoom img:hover {
     transform: scale(1.1);
 }
-/* .p-3 mb-2 bg-black text-white
-{
-    overflow: hidden;
-} */
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 5%;
+    }
+
+    .profile-photo {
+        margin-top: 20px;
+        height: 300px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .header-text {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar li a {
+        font-size: 18px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .about-col-1 img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 35px;
+    }
+
+    .header-text {
+        font-size: 25px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    .about-col-1 img {
+        width: 70%;
+    }
+
+    .navbar li a {
+        font-size: 20px;
+    }
+
+    .profile-photo {
+        height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .header-text {
+        font-size: 20px;
+    }
+
+    .profile-photo {
+        height: 200px;
+    }
+
+    .about-col-1 img {
+        width: 80%;
+    }
+
+    .navbar li a {
+        font-size: 18px;
+    }
+}
